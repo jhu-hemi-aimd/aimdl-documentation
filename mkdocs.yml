@@ -1,0 +1,90 @@
+site_name: AIMD-L Documentation
+site_description: Documentation portal for the AI for Materials Design Laboratory (AIMD-L)
+site_url: https://jhu-hemi-aimd.github.io/aimdl-documentation/
+
+repo_name: jhu-hemi-aimd/aimdl-documentation
+repo_url: https://github.com/jhu-hemi-aimd/aimdl-documentation
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+copyright: Copyright &copy; Johns Hopkins University and AIMD-L contributors
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+nav:
+  - Home: index.md
+  - Onboarding: onboarding/index.md
+  - Safety: safety/index.md
+  - Instruments:
+      - Overview: instruments/index.md
+      - MAXIMA: instruments/maxima/index.md
+      - AMDEE XRD: instruments/amdee-xrd/index.md
+      - Laser Shock: instruments/laser-shock/index.md
+      - Robotics: instruments/robotics/index.md
+  - Software: software/index.md
+  - Data management: data-management/index.md
+  - Tutorials: tutorials/index.md
+  - Troubleshooting: troubleshooting/index.md
+  - Policies:
+      - Overview: policies/index.md
+      - Documentation review: policies/documentation-review.md

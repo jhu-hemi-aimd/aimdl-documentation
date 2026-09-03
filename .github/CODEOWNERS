@@ -1,0 +1,13 @@
+# Every path needs review by the documentation stewards until instrument
+# teams exist as GitHub teams under the jhu-hemi-aimd organization.
+# Until then, you can list individual usernames instead of @org/team slugs.
+* @jhu-hemi-aimd/docs-stewards
+
+# Safety-critical content: add the lab safety team here once it exists, e.g.
+# /docs/safety/ @jhu-hemi-aimd/lab-safety-team @jhu-hemi-aimd/docs-stewards
+
+# Per-instrument ownership to enable as teams are created:
+# /docs/instruments/maxima/      @jhu-hemi-aimd/maxima-team
+# /docs/instruments/amdee-xrd/   @jhu-hemi-aimd/xrd-team
+# /docs/instruments/laser-shock/ @jhu-hemi-aimd/laser-shock-team
+# /docs/instruments/robotics/    @jhu-hemi-aimd/robotics-team
