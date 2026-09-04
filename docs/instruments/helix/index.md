@@ -1,5 +1,5 @@
 ---
-title: Laser Shock
+title: HELIX
 status: draft
 owner_team: laser-shock-team
 last_reviewed: null
@@ -7,9 +7,9 @@ review_cycle: 6 months
 safety_level: operational
 ---
 
-# Laser Shock
+# HELIX
 
-The laser shock laboratory: safe operation, experiment setup, diagnostics, and data capture for laser shock experiments.
+The HELIX instrument: safe operation, experiment setup, diagnostics, and data capture for laser shock experiments.
 
 !!! note "Draft"
     This is a v1 placeholder owned by `laser-shock-team`. Planned pages: access, safety,
@@ -20,4 +20,4 @@ The laser shock laboratory: safe operation, experiment setup, diagnostics, and d
 
 - Owner team: `laser-shock-team`
 - Primary contact: TBD
-- Review cadence: 6 months
+- Review cadence: 2 months

@@ -12,8 +12,9 @@ safety_level: informational
 | Instrument | Documentation |
 | --- | --- |
 | MAXIMA — automated X-ray platform | [MAXIMA](maxima/index.md) |
-| AMDEE XRD | [AMDEE XRD](amdee-xrd/index.md) |
-| Laser Shock | [Laser Shock](laser-shock/index.md) |
+| SPHINX - nanoindenter | [SPHINX](sphinx/index.md) |
+| HELIX - laser shock | [HELIX](helix/index.md) |
+| Run Manager Systems |  [Run Manager Systems](run_manager.md)
 | Robotics and automation | [Robotics](robotics/index.md) |
 
 Each instrument section follows the same pattern as content lands: access,
