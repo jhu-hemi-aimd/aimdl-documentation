@@ -78,8 +78,9 @@ nav:
   - Instruments:
       - Overview: instruments/index.md
       - MAXIMA: instruments/maxima/index.md
-      - AMDEE XRD: instruments/amdee-xrd/index.md
-      - Laser Shock: instruments/laser-shock/index.md
+      - SPHINX: instruments/sphinx/index.md
+      - HELIX: instruments/helix/index.md
+      - Run Manager: instruments/run_manager/index.md
       - Robotics: instruments/robotics/index.md
   - Software: software/index.md
   - Data management: data-management/index.md
