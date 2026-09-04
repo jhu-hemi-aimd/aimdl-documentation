@@ -77,7 +77,32 @@ nav:
   - Safety: safety/index.md
   - Instruments:
       - Overview: instruments/index.md
-      - MAXIMA: instruments/maxima/index.md
+      - MAXIMA:
+          - Overview: instruments/maxima/index.md
+          - Safety: instruments/maxima/safety.md
+          - Procedures:
+              - Manual startup: instruments/maxima/procedures/startup.md
+              - Calibration: instruments/maxima/procedures/calibration.md
+              - Sample handling: instruments/maxima/procedures/sample-handling.md
+              - Shutdown: instruments/maxima/procedures/shutdown.md
+              - Running an experiment: instruments/maxima/procedures/experiment.md
+              - Design of experiments:
+                  - "HTMAX Ti-V (Rayna)": instruments/maxima/procedures/doe/rayna-htmax.md
+          - Software:
+              - Docker: instruments/maxima/software/docker.md
+              - Git Bash: instruments/maxima/software/gitbash.md
+              - Dagster: instruments/maxima/software/dagster.md
+              - PyFAI: instruments/maxima/software/pyfai.md
+              - PyMCA: instruments/maxima/software/pymca.md
+              - Dectris Albula: instruments/maxima/software/albula.md
+              - OpenMSIStream: instruments/maxima/software/openmsistream.md
+          - Reference:
+              - Run scripts: instruments/maxima/reference/run-scripts.md
+              - Coordinate system: instruments/maxima/reference/coordinates.md
+              - Detector specifications: instruments/maxima/reference/detector.md
+              - X-ray source: instruments/maxima/reference/source.md
+          - Troubleshooting: instruments/maxima/troubleshooting.md
+          - Changelog: instruments/maxima/changelog.md
       - SPHINX: instruments/sphinx/index.md
       - HELIX: instruments/helix/index.md
       - Run Manager: instruments/run_manager/index.md
