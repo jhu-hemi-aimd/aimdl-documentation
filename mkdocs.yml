@@ -73,7 +73,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Onboarding: onboarding/index.md
+  - Onboarding:
+      - Start here: onboarding/index.md
+      - Updating the docs: onboarding/contributing.md
   - Safety: safety/index.md
   - Instruments:
       - Overview: instruments/index.md
