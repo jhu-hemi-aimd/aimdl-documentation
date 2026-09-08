@@ -117,10 +117,6 @@
          <lastmod>2026-09-08</lastmod>
     </url>
     <url>
-         <loc>https://jhu-hemi-aimd.github.io/aimdl-documentation/onboarding/contributing/</loc>
-         <lastmod>2026-09-08</lastmod>
-    </url>
-    <url>
          <loc>https://jhu-hemi-aimd.github.io/aimdl-documentation/policies/</loc>
          <lastmod>2026-09-08</lastmod>
     </url>
@@ -142,6 +138,10 @@
     </url>
     <url>
          <loc>https://jhu-hemi-aimd.github.io/aimdl-documentation/tutorials/</loc>
+         <lastmod>2026-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://jhu-hemi-aimd.github.io/aimdl-documentation/tutorials/contributing/</loc>
          <lastmod>2026-09-08</lastmod>
     </url>
 </urlset>
