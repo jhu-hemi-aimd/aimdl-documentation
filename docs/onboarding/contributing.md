@@ -1,16 +1,15 @@
 ---
-title: Updating the docs
+title: "Updating Docs: Info for the Teams"
 status: active
 owner_team: docs-stewards
-last_reviewed: 2026-09-04
+last_reviewed: 2026-09-08
 review_cycle: 12 months
 safety_level: informational
 ---
 
-# Updating the docs
+# Updating Docs: Info for the Teams
 
-This page is for members of the documentation teams: how to get access and
-how to get a change published on this site.
+This page is for members of the documentation teams from each subsection including instruments
 
 ## 1. Get access (one time)
 
@@ -23,14 +22,15 @@ how to get a change published on this site.
    ```bash
    git clone https://github.com/jhu-hemi-aimd/aimdl-documentation.git
    ```
+   you may also use a desktop GitHub app
+   
 
 ## 2. How a change reaches the site
 
 `main` is protected — nobody edits it directly. Every change follows the same
-path: **issue → branch → edits → pull request → review → merge**. When your PR
-merges, the site rebuilds and deploys automatically within a couple of minutes.
+path: **issue → branch → edits  → commit/push → pull request → review → merge**. This is standard GitHub usage but make sure you understand that you have to make an issue and a relate branch where you work.  Your work doesn't get to the main branch until you make a pull request (PR) and have it reviewed by someone on the Documentation Steward Team. When your PR is approved and merges, the site rebuilds and deploys automatically within a couple of minutes.
 
-CI runs `mkdocs build --strict` on every PR: a broken link, or a page added
+Continuous Integration (CI) runs `mkdocs build --strict` on every PR: a broken link, or a page added
 without a nav entry (or removed without cleaning up its links), fails the build.
 
 ## 3. Step by step
@@ -90,7 +90,7 @@ safety_level: operational  # informational | operational | safety-critical | res
 
 ## 4. The easy way: let a coding agent do the bookkeeping
 
-If you use Claude Code (or another coding agent with GitHub access) inside
+If you use a coding agent with GitHub access inside
 your clone, the issue, branch, checks, and PR can all be handled for you.
 Run `gh auth login` once, then paste this prompt and fill in the first blank:
 
@@ -120,7 +120,7 @@ Do the following:
    PR links so I can follow the review.
 ```
 
-You stay responsible for the content — read what the agent wrote before the
-PR goes to review, exactly as you would your own draft.
+**You stay responsible for the content! Read what the agent wrote before the
+PR goes to review, exactly as you would your own draft!**
 
-Questions? Ask the documentation stewards.
+Questions? Ask the Documentation Stewards.
