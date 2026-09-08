@@ -3,7 +3,7 @@ title: Onboarding
 status: draft
 owner_team: docs-stewards
 last_reviewed: null
-review_cycle: 12 months
+review_cycle: 2 months
 safety_level: operational
 ---
 
@@ -12,7 +12,7 @@ safety_level: operational
 Start here if you are new to AIMD-L.
 
 !!! note "Draft"
-    This section is a v1 placeholder. Planned pages: accounts and access,
+    This section is a v1 placeholder. Other planned pages: accounts and access,
     required training, first-week checklist.
 
 1. Read the [Safety overview](../safety/index.md) before entering the lab.

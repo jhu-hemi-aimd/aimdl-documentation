@@ -3,7 +3,7 @@ title: Tutorials
 status: draft
 owner_team: data-team
 last_reviewed: null
-review_cycle: 12 months
+review_cycle: 2 months
 safety_level: informational
 ---
 
@@ -23,3 +23,5 @@ code blocks. They do not execute in CI and carry no environment machinery.
 
 Planned tutorials: querying AIMD-L data services from Python, XRD reduction,
 Dagster workflow execution, materials data models.
+
+1. How to [contribute](../safety/contributing.md) to the documentation website.
