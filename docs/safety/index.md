@@ -18,3 +18,7 @@ safety_level: safety-critical
 
 Planned pages: lab access, X-ray safety, laser safety, robotics safety,
 emergency procedures.
+
+## Instrument-specific safety
+
+- [MAXIMA safety](../instruments/maxima/safety.md) — X-ray and robotics safety for MAXIMA

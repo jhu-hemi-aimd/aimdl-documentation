@@ -12,3 +12,7 @@ safety_level: informational
 !!! note "Draft"
     Planned pages: workstation setup, Python environments, data-access
     clients, container workflows.
+
+## Instrument-specific software
+
+- [MAXIMA software](../instruments/maxima/index.md#software) — Docker, Git Bash, Dagster, PyFAI, PyMCA

@@ -12,3 +12,7 @@ safety_level: operational
 !!! note "Draft"
     Planned pages: instrument issues, software issues, data issues,
     escalation paths.
+
+## Instrument-specific troubleshooting
+
+- [MAXIMA troubleshooting](../instruments/maxima/troubleshooting.md) — known issues, error codes, escalation
