@@ -73,9 +73,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Onboarding:
-      - Start here: onboarding/index.md
-      - Updating the docs: onboarding/contributing.md
+  - Onboarding: onboarding/index.md
   - Safety: safety/index.md
   - Instruments:
       - Overview: instruments/index.md
@@ -111,7 +109,9 @@ nav:
       - Robotics: instruments/robotics/index.md
   - Software: software/index.md
   - Data management: data-management/index.md
-  - Tutorials: tutorials/index.md
+  - Tutorials:
+      - Overview: tutorials/index.md
+      - Updating the docs: tutorials/contributing.md
   - Troubleshooting: troubleshooting/index.md
   - Policies:
       - Overview: policies/index.md
