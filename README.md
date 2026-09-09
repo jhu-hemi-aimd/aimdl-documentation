@@ -2,8 +2,15 @@
 
 Documentation portal for the AIMD-L laboratory: SOPs, instrument manuals,
 safety policies, onboarding, software setup, data management, and tutorials.
-Built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-and deployed to GitHub Pages.
+Deployed at [https://docs.htmdec.org/aimdl/](https://docs.htmdec.org/aimdl/). Created by the AIMD-L Documentation Stewards, an intrepid band disseminating information for users, developers, and AIMD-L bon vivants. You will someday be able to reach the Documentation Stewards by emailing info@htmdec.org but for now you will have to make do by asking someone from the Elbert Data Rabble, Matt, or Joseph.
+
+## Creating/Maintaining Documentation
+
+Basic instructions for adding to the documentation are in [contributing.md](docs/tutorials/contributing.md).  The instructions include info on how to use a coding agent to edit or contribute to this repo and documentation site.
+
+A fundamental rule is that the main branch is protected — nobody edits it directly. Every change follows the same path: issue → branch → edits → commit/push → pull request → review → merge. This is standard GitHub usage but make sure you understand that you have to make an issue and a related branch where you work. Your work doesn't get to the main branch until you make a pull request (PR) and have it reviewed by someone on the Documentation Steward Team. When your PR is approved and merges, the site rebuilds and deploys automatically within a couple of minutes.
+
+Continuous Integration (CI) runs `mkdocs build --strict` on every PR: a broken link, or a page added without a nav entry (or removed without cleaning up its links), fails the build.
 
 ## Local preview
 
@@ -32,7 +39,6 @@ Deliberately deferred to later versions:
 - **Multi-repository assembly** (monorepo plugin, submodules, Model B).
 - **Machine-readable instrument metadata** (`metadata/*.yml`) — add only when
   a script or page actually consumes it.
-- Custom domain (`docs.aimdl.jhu.edu`) — configure after Pages deployment works.
 
 ## Deployment
 
