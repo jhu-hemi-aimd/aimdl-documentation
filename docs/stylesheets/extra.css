@@ -1,0 +1,132 @@
+:root {
+  --aimdl-navy: #173873;
+  --aimdl-olive: #75733f;
+  --aimdl-rule: rgba(23, 56, 115, 0.22);
+  --aimdl-row: rgba(23, 56, 115, 0.045);
+  --aimdl-shadow: 0 0.2rem 0.65rem rgba(20, 31, 55, 0.09);
+}
+
+.md-typeset h1 {
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 0.18rem solid var(--aimdl-navy);
+  color: var(--aimdl-navy);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+}
+
+.md-typeset h2 {
+  margin-top: 2.2em;
+  padding: 0.12rem 0 0.12rem 0.65rem;
+  border-left: 0.22rem solid var(--aimdl-olive);
+  color: var(--aimdl-navy);
+  font-weight: 700;
+  letter-spacing: -0.012em;
+}
+
+.md-typeset h3 {
+  color: var(--aimdl-navy);
+  font-weight: 700;
+}
+
+.md-typeset__scrollwrap {
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset__table {
+  width: 100%;
+  border: 1px solid var(--aimdl-rule);
+  border-radius: 0.4rem;
+  box-shadow: var(--aimdl-shadow);
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+
+.md-typeset table:not([class]) th {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: var(--aimdl-navy);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+}
+
+.md-typeset table:not([class]) td {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-color: var(--aimdl-rule);
+  vertical-align: top;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: var(--aimdl-row);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(117, 115, 63, 0.09);
+}
+
+.caimee-wordmark {
+  display: block;
+  width: min(100%, 52rem);
+  height: auto;
+  margin: 0 0 2rem;
+  padding: 0.65rem 0;
+}
+
+.md-typeset figure.lab-layout-figure {
+  display: block;
+  max-width: none;
+  width: 100%;
+  margin: 1.5rem 0 2rem;
+}
+
+.md-typeset .lab-layout-figure a {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--aimdl-rule);
+  border-radius: 0.4rem;
+  box-shadow: var(--aimdl-shadow);
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.md-typeset .lab-layout-figure img {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.lab-layout-figure figcaption {
+  margin-top: 0.65rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 44.9844em) {
+  .md-typeset h1 {
+    font-size: 1.9rem;
+  }
+
+  .md-typeset h2 {
+    margin-top: 1.8em;
+  }
+
+  .caimee-wordmark {
+    margin-bottom: 1.25rem;
+  }
+}

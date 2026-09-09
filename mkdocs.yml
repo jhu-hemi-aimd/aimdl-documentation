@@ -1,0 +1,40 @@
+site_name: AIMDL Laboratory Safety
+site_description: Safety documentation for the CAIMEE AIMD Laboratory
+site_author: AIMDL
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Safety:
+      - Emergency Quick Reference: emergency-quick-reference.md
+      - General Safety: general-safety.md
+      - Lab Layout and Access: lab-layout.md
+      - Attire and PPE: ppe-attire.md
+      - Equipment and Station Safety: equipment-station-safety.md
+      - Class 4 Laser Safety: laser-safety.md
+      - Chemical Safety and Waste: chemical-safety-waste.md
+      - Detailed Emergency Procedures: detailed-emergency-procedures.md
+      - Contacts and Hazard Reference: contacts-reference.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
