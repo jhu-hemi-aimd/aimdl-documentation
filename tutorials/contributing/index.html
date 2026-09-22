@@ -2498,35 +2498,16 @@ without a nav entry (or removed without cleaning up its links), fails the build.
 <a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nn">---</span>
 </code></pre></div>
 <h2 id="4-the-easy-way-let-a-coding-agent-do-the-bookkeeping">4. The easy way: let a coding agent do the bookkeeping<a class="headerlink" href="#4-the-easy-way-let-a-coding-agent-do-the-bookkeeping" title="Permanent link">&para;</a></h2>
-<p>If you use a coding agent with GitHub access inside
-your clone, the issue, branch, checks, and PR can all be handled for you.
-Run <code>gh auth login</code> once, then paste this prompt and fill in the first blank:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>You are in my local clone of jhu-hemi-aimd/aimdl-documentation, the AIMD-L
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>documentation site (Material for MkDocs; CI runs `mkdocs build --strict`).
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>I want to make this documentation change:
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>&lt;DESCRIBE IT: which page(s) or new page, which instrument/topic, what content&gt;
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>Do the following:
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>1. Create a GitHub issue for the change with `gh issue create`; call its number N.
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>2. Update main (`git switch main &amp;&amp; git pull`) and create a branch named
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>   docs/N-&lt;short-slug&gt;.
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>3. Make the edits under docs/: every page starts with the same YAML front
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>   matter used by existing pages; a new page also gets a nav entry in
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>   mkdocs.yml; a renamed or removed page gets its nav entry and inbound
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>   links fixed in the same commit.
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>4. Write the content with me: ask me for any facts you are missing instead of
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>   guessing — never invent procedures, safety steps, or parameter values.
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>5. Run `mkdocs build --strict` and fix problems until it passes.
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>6. Commit with a message that references #N and push the branch.
-<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>7. Open a pull request with `gh pr create`, body "Fixes #N", and request
-<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>   review from the owner_team in the page's front matter (for safety-critical
-<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>   pages, also the lab safety team).
-<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>8. Do NOT push to main and do NOT merge. When done, give me the issue and
-<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>   PR links so I can follow the review.
-</code></pre></div>
-<p><strong>You stay responsible for the content! Read what the agent wrote before the
-PR goes to review, exactly as you would your own draft!</strong></p>
+<p>If you use a coding assistant (GitHub Copilot, Claude Code, etc.) inside your local clone[cite: 1]:</p>
+<ol>
+<li>Authenticate GitHub CLI: <code>gh auth login</code>.</li>
+<li>Invoke the <strong><code>changing-documentation</code></strong> skill by prompting your agent:<blockquote>
+<p>"I would like to change the documentation for [page/topic] with [summary of changes]."</p>
+</blockquote>
+</li>
+<li>The agent will manage the tracking issue, branch setup, front matter boilerplate, <code>mkdocs build --strict</code> checks, and draft PR.</li>
+<li><strong>You stay responsible for technical accuracy</strong>—always review the diff before requesting merge approval.</li>
+</ol>
 <p>Questions? Ask the Documentation Stewards.</p>
 
 
@@ -2550,7 +2531,7 @@ PR goes to review, exactly as you would your own draft!</strong></p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 8, 2026 19:28:29 UTC">September 8, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 21:38:59 UTC">September 14, 2026</span>
   </span>
 
     
