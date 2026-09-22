@@ -45,3 +45,7 @@ Deliberately deferred to later versions:
 Pushes to `main` build strictly and publish to the `gh-pages` branch via
 GitHub Actions. Enable GitHub Pages (source: `gh-pages` branch) in the
 repository settings after the first successful workflow run.
+
+## AI-Assisted Documentation
+
+This repository includes built-in agent skills in `.agents/skills/` (such as `changing-documentation` and `review-cycle-audit`). If you are using Claude, GitHub Copilot, or Codex, see [contributing.md](docs/tutorials/contributing.md) for how to use them.

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DocumentationFrontMatter",
+  "description": "Schema for validating YAML front matter across aimdl-documentation markdown pages.",
+  "type": "object",
+  "required": [
+    "title",
+    "status",
+    "owner_team",
+    "primary_contact",
+    "last_reviewed",
+    "review_cycle",
+    "safety_level"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable title of the document."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "active",
+        "needs-review",
+        "deprecated",
+        "archived"
+      ],
+      "description": "Current lifecycle status of the document."
+    },
+    "owner_team": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Team identifier responsible for maintaining the page."
+    },
+    "primary_contact": {
+      "type": ["string", "null"],
+      "description": "GitHub username or contact name responsible for the page."
+    },
+    "last_reviewed": {
+      "type": ["string", "null"],
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "ISO 8601 date (YYYY-MM-DD) of the last completed review, or null if unreviewed."
+    },
+    "review_cycle": {
+      "type": "string",
+      "pattern": "^\\d+\\s*(day|month|year)s?$",
+      "description": "Review period threshold, such as '6 months' or '12 months'."
+    },
+    "safety_level": {
+      "type": "string",
+      "enum": [
+        "informational",
+        "operational",
+        "safety-critical",
+        "restricted"
+      ],
+      "description": "Classification of the page's procedural and safety risk."
+    }
+  },
+  "additionalProperties": false
+}

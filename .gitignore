@@ -219,7 +219,10 @@ __marimo__/
 #MacOS
 .DS_Store/
 .DS_Store
-.claude/
+
 
 # MkDocs build output
 site/
+
+# IDE
+.vscode/

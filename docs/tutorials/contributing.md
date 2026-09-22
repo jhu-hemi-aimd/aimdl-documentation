@@ -90,37 +90,12 @@ safety_level: operational  # informational | operational | safety-critical | res
 
 ## 4. The easy way: let a coding agent do the bookkeeping
 
-If you use a coding agent with GitHub access inside
-your clone, the issue, branch, checks, and PR can all be handled for you.
-Run `gh auth login` once, then paste this prompt and fill in the first blank:
+If you use a coding assistant (GitHub Copilot, Claude Code, etc.) inside your local clone[cite: 1]:
 
-```text
-You are in my local clone of jhu-hemi-aimd/aimdl-documentation, the AIMD-L
-documentation site (Material for MkDocs; CI runs `mkdocs build --strict`).
-
-I want to make this documentation change:
-<DESCRIBE IT: which page(s) or new page, which instrument/topic, what content>
-
-Do the following:
-1. Create a GitHub issue for the change with `gh issue create`; call its number N.
-2. Update main (`git switch main && git pull`) and create a branch named
-   docs/N-<short-slug>.
-3. Make the edits under docs/: every page starts with the same YAML front
-   matter used by existing pages; a new page also gets a nav entry in
-   mkdocs.yml; a renamed or removed page gets its nav entry and inbound
-   links fixed in the same commit.
-4. Write the content with me: ask me for any facts you are missing instead of
-   guessing — never invent procedures, safety steps, or parameter values.
-5. Run `mkdocs build --strict` and fix problems until it passes.
-6. Commit with a message that references #N and push the branch.
-7. Open a pull request with `gh pr create`, body "Fixes #N", and request
-   review from the owner_team in the page's front matter (for safety-critical
-   pages, also the lab safety team).
-8. Do NOT push to main and do NOT merge. When done, give me the issue and
-   PR links so I can follow the review.
-```
-
-**You stay responsible for the content! Read what the agent wrote before the
-PR goes to review, exactly as you would your own draft!**
+1. Authenticate GitHub CLI: `gh auth login`.
+2. Invoke the **`changing-documentation`** skill by prompting your agent:
+   > "I would like to change the documentation for [page/topic] with [summary of changes]."
+3. The agent will manage the tracking issue, branch setup, front matter boilerplate, `mkdocs build --strict` checks, and draft PR.
+4. **You stay responsible for technical accuracy**—always review the diff before requesting merge approval.
 
 Questions? Ask the Documentation Stewards.
