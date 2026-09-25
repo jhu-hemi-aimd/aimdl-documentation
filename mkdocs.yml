@@ -74,7 +74,13 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Onboarding: onboarding/index.md
-  - Safety: safety/index.md
+  - Safety:
+      - Overview: safety/index.md
+      - Emergency Quick Reference: safety/emergency-quick-reference.md
+      - Lab Access and Safety Training: safety/lab-access-training.md
+      - General Safety: safety/general-safety.md
+      - Lab Layout and Access: safety/lab-layout.md
+      - Attire and PPE: safety/ppe.md
   - Instruments:
       - Overview: instruments/index.md
       - MAXIMA:
