@@ -1,6 +1,6 @@
 ---
 title: Onboarding
-status: draft
+status: active
 owner_team: docs-stewards
 last_reviewed: null
 review_cycle: 2 months
