@@ -3,6 +3,7 @@
   const base = new URL('../../', document.currentScript.src);
   let index;
   let request = 0;
+  let renderedQuery;
 
   function queryParts(value) {
     const tags = [];
@@ -17,6 +18,9 @@
     const output = document.querySelector('[data-tag-results]');
     const native = document.querySelector('[data-md-component="search-result"]');
     if (!input || !output || !native) return;
+    // Refocusing the search must not remove the link being clicked.
+    if (renderedQuery === input.value) return;
+    renderedQuery = input.value;
     const version = ++request;
     const { tags, words } = queryParts(input.value);
     const partial = input.value.match(/(?:^|\s)#([a-z0-9_-]*)$/i);
@@ -24,12 +28,11 @@
     native.hidden = tagMode;
     output.hidden = !tagMode;
     if (!tagMode) return;
-    output.replaceChildren();
     const status = document.createElement('div');
     status.className = 'md-search-result__meta';
     status.setAttribute('role', 'status');
     status.textContent = 'Searching tags…';
-    output.append(status);
+    if (!index) output.replaceChildren(status);
     try {
       index ||= fetch(new URL('tags.json', base)).then(response => {
         if (!response.ok) throw new Error('Tag index unavailable');
@@ -53,7 +56,7 @@
           link.textContent = `#${tag}`;
           choices.append(link);
         }
-        output.append(choices);
+        output.replaceChildren(status, choices);
         return;
       }
       const matches = pages.filter(page => {
@@ -83,9 +86,13 @@
         item.append(link);
         list.append(item);
       }
-      output.append(list);
+      output.replaceChildren(status, list);
     } catch (_) {
-      if (version === request) status.textContent = 'Tag search could not load. Please try again.';
+      if (version === request) {
+        renderedQuery = undefined;
+        status.textContent = 'Tag search could not load. Please try again.';
+        output.replaceChildren(status);
+      }
     }
   }
 
@@ -99,6 +106,7 @@
       output.dataset.tagResults = '';
       output.hidden = true;
       native.after(output);
+      renderedQuery = undefined;
     }
     input.placeholder = 'Search';
     input.setAttribute('aria-label', 'Search');
@@ -120,11 +128,38 @@
     const input = document.querySelector('[data-md-component="search-query"]');
     if (!input) return;
     event.preventDefault();
+    // Material closes search on any link click inside the search panel.
+    // Handle tag choices before that listener (and instant navigation).
+    event.stopPropagation();
     input.value = `#${tag.dataset.tagQuery}`;
+    const toggle = document.getElementById('__search');
+    if (toggle && !toggle.checked) {
+      toggle.checked = true;
+      toggle.dispatchEvent(new Event('change', { bubbles: true }));
+    }
     input.focus();
     input.dispatchEvent(new Event('input', { bubbles: true }));
     input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
-  });
+  }, true);
+  document.addEventListener('keydown', event => {
+    const output = document.querySelector('[data-tag-results]');
+    const input = document.querySelector('[data-md-component="search-query"]');
+    if (!output || output.hidden || !input ||
+        (event.target !== input && !output.contains(event.target))) return;
+    const links = [...output.querySelectorAll('a')];
+    if (!['ArrowDown', 'ArrowUp', 'Enter'].includes(event.key)) return;
+    // Material's keyboard handler only knows about its native (hidden) results.
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.key === 'Enter') {
+      (event.target === input ? links[0] : event.target.closest('a'))?.click();
+    } else {
+      const choices = [input, ...links];
+      const step = event.key === 'ArrowDown' ? 1 : -1;
+      const position = choices.indexOf(document.activeElement);
+      choices[(position + step + choices.length) % choices.length].focus();
+    }
+  }, true);
   if (typeof document$ !== 'undefined') document$.subscribe(mount);
   else mount();
 })();
