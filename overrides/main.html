@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if config.extra.preview %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+{% endblock %}
+
+{% block announce %}
+  {% if config.extra.preview %}
+    <strong>Unreviewed preview · PR #{{ config.extra.preview.number }} · {{ config.extra.preview.sha }}</strong>
+    — For review only. <a href="{{ config.extra.preview.production_url }}">Open the published documentation</a>.
+  {% endif %}
+{% endblock %}

@@ -13,6 +13,7 @@ copyright: Copyright &copy; Johns Hopkins University and AIMD-L contributors
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   features:
     - navigation.instant
@@ -48,6 +49,9 @@ plugins:
       enable_creation_date: true
       type: date
       fallback_to_build_date: true
+
+hooks:
+  - scripts/preview.py
 
 markdown_extensions:
   - admonition
