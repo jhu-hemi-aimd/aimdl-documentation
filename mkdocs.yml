@@ -116,7 +116,7 @@ nav:
       - SPHINX: instruments/sphinx/index.md
       - HELIX:
           - Overview: instruments/helix/index.md
-          - Laser safety plan: instruments/helix/safety/safety_doc.md
+          - Laser safety plan: instruments/helix/safety/safety.md
       - Run Manager: instruments/run_manager/index.md
       - Robotics: instruments/robotics/index.md
   - Software: software/index.md
