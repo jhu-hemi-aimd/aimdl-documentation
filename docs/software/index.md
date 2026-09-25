@@ -17,3 +17,4 @@ safety_level: informational
 
 - [MAXIMA software](../instruments/maxima/index.md#software) — Docker, Git Bash, Dagster, PyFAI, PyMCA
 - Placeholder text
+- 2nd Placeholder
