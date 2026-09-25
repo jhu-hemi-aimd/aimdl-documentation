@@ -31,7 +31,7 @@ not by itself satisfy the training requirement.
         - Bloodborne Pathogens
         - JH | Fire, Hazard Communication and Construction Safety 2024
         - Chemical Waste Management
-    - Complete *The Safe Use of Lasers in the Laboratory* in myLearning. Researchers who will actively use lasers must also complete *Becoming an Authorized Laser Operator* and identify Matt Shaeffer as the LIS when registering as a laser user.
+    - Complete *The Safe Use of Lasers in the Laboratory* in myLearning. Researchers who will actively use lasers must also complete *Becoming an Authorized Laser Operator* and identify **Matt Shaeffer as the LIS** when registering as a laser user.
     - Register for an iLab account when required for instrument reservations and billing.
 3. Complete Tier 2 by reviewing the AIMD-L laboratory-specific safety documentation and completing any acknowledgment or additional training assigned by AIMD-L staff.
 4. Submit the required screenshots, certificates, and supporting documents to either **Matthew Shaeffer** or **Joseph Nkansah-Mahaney** for review.
