@@ -1,4 +1,5 @@
 ---
+tags: [tutorials]
 title: Tutorials
 status: draft
 owner_team: data-team

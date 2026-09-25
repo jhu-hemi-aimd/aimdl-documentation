@@ -58,6 +58,15 @@
         "restricted"
       ],
       "description": "Classification of the page's procedural and safety risk."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+      },
+      "uniqueItems": true,
+      "description": "Optional searchable page tags, e.g. [tutorials, sample-handling]."
     }
   },
   "additionalProperties": false

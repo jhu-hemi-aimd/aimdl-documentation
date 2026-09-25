@@ -1,4 +1,5 @@
 ---
+tags: [tutorials, documentation]
 title: "Updating Docs: Info for the Teams"
 status: active
 owner_team: docs-stewards

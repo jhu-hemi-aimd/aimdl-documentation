@@ -52,6 +52,13 @@ plugins:
 
 hooks:
   - scripts/preview.py
+  - scripts/tags.py
+
+extra_javascript:
+  - assets/javascripts/tags.js
+
+extra_css:
+  - assets/stylesheets/tags.css
 
 markdown_extensions:
   - admonition
