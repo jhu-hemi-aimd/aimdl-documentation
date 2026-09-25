@@ -16,3 +16,4 @@ safety_level: informational
 ## Instrument-specific software
 
 - [MAXIMA software](../instruments/maxima/index.md#software) — Docker, Git Bash, Dagster, PyFAI, PyMCA
+- Placeholder text
