@@ -114,7 +114,9 @@ nav:
           - Troubleshooting: instruments/maxima/troubleshooting.md
           - Changelog: instruments/maxima/changelog.md
       - SPHINX: instruments/sphinx/index.md
-      - HELIX: instruments/helix/index.md
+      - HELIX:
+          - Overview: instruments/helix/index.md
+          - Laser safety plan: instruments/helix/safety/safety_doc.md
       - Run Manager: instruments/run_manager/index.md
       - Robotics: instruments/robotics/index.md
   - Software: software/index.md
