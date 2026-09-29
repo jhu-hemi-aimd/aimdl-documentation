@@ -1,3 +1,13 @@
+---
+title: AIMD-L Documentation
+status: needs-review
+owner_team: docs-stewards
+primary_contact: null
+last_reviewed: null
+review_cycle: 12 months
+safety_level: informational
+---
+
 # AIMD-L Documentation
 
 Welcome to the documentation portal for the AI for Materials Design
@@ -11,6 +21,7 @@ safety, instruments, software, and data management.
 - New users: begin with [Onboarding](onboarding/index.md).
 - Instrument users: begin with [Instruments](instruments/index.md).
 - Safety-critical operations: begin with [Safety](safety/index.md).
+- Software users and developers: begin with [Software and controls](software/index.md).
 - Computational users: begin with [Tutorials](tutorials/index.md).
 
 ## Documentation types

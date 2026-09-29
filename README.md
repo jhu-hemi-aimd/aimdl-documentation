@@ -49,3 +49,17 @@ repository settings after the first successful workflow run.
 ## AI-Assisted Documentation
 
 This repository includes built-in agent skills in `.agents/skills/` (such as `changing-documentation` and `review-cycle-audit`). If you are using Claude, GitHub Copilot, or Codex, see [contributing.md](docs/tutorials/contributing.md) for how to use them.
+
+## Software and controls
+
+The [software section](docs/software/index.md) documents AIMDAS, AIMDDS,
+AIMDRM, AIMDRC and the four supplied station controllers. It includes API and
+OPC UA references, setup guides, downloadable JSON examples, and the generated
+error catalog. See [maintenance](docs/software/development/maintenance.md) for
+AIMDDS error regeneration and source provenance.
+
+For an extracted ZIP without Git history, run
+`ENABLE_GIT_REVISION_DATE=false mkdocs build --strict` to disable only Git dates.
+Normal repository builds retain revision dates. Run the repository preflight
+with `python .agents/skills/change-documentation/scripts/preflight.py` after
+installing `requirements.txt`.

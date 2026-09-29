@@ -2,6 +2,7 @@
 title: Run Manager Systems
 status: draft
 owner_team: eric
+primary_contact: null
 last_reviewed: null
 review_cycle: 2 months
 safety_level: operational
@@ -9,10 +10,10 @@ safety_level: operational
 
 # Run Manager Systems
 
-AIMD-L run manager server-client, OPC-UA systems: ?.
+AIMDRM coordinates sample scheduling, robotics transfers and station clients through OPC UA. See the [control architecture](../../software/architecture.md), [run manager overview](../../software/repositories/aimdrm.md), [generalized client](../../software/repositories/aimdrc.md), and [OPC UA reference](../../software/reference/opcua.md).
 
 !!! note "Draft"
-    This is a v1 placeholder owned by `robotics-team`. Planned pages: access, safety,
+    The software references are available above. Planned physical-system pages: access, safety,
     startup, shutdown, measurement, data capture, troubleshooting,
     emergency shutdown, maintenance, reference.
 

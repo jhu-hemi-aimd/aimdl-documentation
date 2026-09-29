@@ -10,6 +10,14 @@ review_cycle: 12 months
 safety_level: operational
 ---
 
+# Run scripts
+
+!!! info "Current control-software reference"
+    New uploads require schema version 2. Use the [MAXIMA controller reference](../../../software/controllers/maxima.md) and [shared run-script schema](../../../software/reference/run-scripts.md) for current inputs, units and examples. The legacy `sample.scan_points` format below is not accepted by new uploads. The physical observations below remain under instrument-owner review.
+
+## Legacy instrument notes
+
+
 Run scripts are commands given through either the AIMD-L run manager or MAXIMA manual run mode, and give the coordinates and settings for a MAXIMA run. 
 
 Here is an example: 

@@ -48,6 +48,9 @@ analysis pipelines.
 
 ## Software
 
+- [Controller and run inputs](../../software/controllers/maxima.md) — current source behavior, SDK mapping and examples
+- [Station setup](../../software/setup/stations.md#maxima) — AIMDRC installation and detector storage
+
 - [Docker](software/docker.md) — the `aimdrc` control container
 - [Git Bash](software/gitbash.md) — terminal on the Windows control PC
 - [Dagster](software/dagster.md) — sensor-driven XRD/XRF processing pipeline

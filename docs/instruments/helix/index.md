@@ -39,7 +39,8 @@ capture for laser shock experiments in the AIMD-L Laser Shock Testing Area
 
 ## Reference
 
-- *Planned*
+- [HELIX controller](../../software/controllers/helix.md) — devices, input fields and output files
+- [Station setup](../../software/setup/stations.md#helix) — AIMDRC and host dependencies
 
 ## Troubleshooting
 
