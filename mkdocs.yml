@@ -46,6 +46,7 @@ theme:
 plugins:
   - search
   - git-revision-date-localized:
+      enabled: !ENV [ENABLE_GIT_REVISION_DATE, true]
       enable_creation_date: true
       type: date
       fallback_to_build_date: true
@@ -126,7 +127,40 @@ nav:
           - Laser safety plan: instruments/helix/safety/safety.md
       - Run Manager: instruments/run_manager/index.md
       - Robotics: instruments/robotics/index.md
-  - Software: software/index.md
+  - Software:
+      - Overview: software/index.md
+      - Architecture: software/architecture.md
+      - Application operator guide: software/operator-guide.md
+      - Repositories:
+          - AIMDAS: software/repositories/aimdas.md
+          - AIMDDS: software/repositories/aimdds.md
+          - AIMDRM: software/repositories/aimdrm.md
+          - AIMDRC: software/repositories/aimdrc.md
+      - Setup:
+          - Overview: software/setup/index.md
+          - Central services: software/setup/services.md
+          - Station clients: software/setup/stations.md
+      - Controllers:
+          - MAXIMA: software/controllers/maxima.md
+          - HELIX: software/controllers/helix.md
+          - SPHINX: software/controllers/sphinx.md
+          - COORD: software/controllers/coord.md
+      - Reference:
+          - Run scripts: software/reference/run-scripts.md
+          - Coordinates: software/reference/coordinates.md
+          - HTTP and WebSocket API: software/reference/api.md
+          - OPC UA: software/reference/opcua.md
+          - Error codes: software/reference/error-codes.md
+          - Error symbols: software/reference/error-symbols.md
+          - Current limitations: software/reference/source-review.md
+          - Source snapshot: software/reference/source-snapshot.md
+      - Examples: software/examples/index.md
+      - Operations:
+          - Troubleshooting: software/operations/troubleshooting.md
+          - Data and recovery: software/operations/data-and-recovery.md
+      - Development:
+          - Controller interface: software/development/controller-interface.md
+          - Documentation maintenance: software/development/maintenance.md
   - Data management: data-management/index.md
   - Tutorials:
       - Overview: tutorials/index.md

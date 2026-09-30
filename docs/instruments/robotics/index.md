@@ -2,6 +2,7 @@
 title: Robotics
 status: draft
 owner_team: robotics-team
+primary_contact: null
 last_reviewed: null
 review_cycle: 6 months
 safety_level: operational
@@ -21,3 +22,7 @@ AIMD-L robotics and automation systems: workcell access, interlocks, task progra
 - Owner team: `robotics-team`
 - Primary contact: TBD
 - Review cadence: 6 months
+
+## Software integration
+
+See [AIMDRM](../../software/repositories/aimdrm.md) for priority lists and transfer coordination, and the [OPC UA reference](../../software/reference/opcua.md) for the PLC interface and processed-state values.
