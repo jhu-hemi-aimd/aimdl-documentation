@@ -89,6 +89,7 @@ nav:
   - Safety:
       - Overview: safety/index.md
       - Emergency Quick Reference: safety/emergency-quick-reference.md
+      - Detailed Emergency Procedures: safety/emergency-procedures.md
       - Lab Access and Safety Training: safety/lab-access-training.md
       - General Safety: safety/general-safety.md
       - Lab Layout and Access: safety/lab-layout.md

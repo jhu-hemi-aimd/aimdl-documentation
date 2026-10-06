@@ -44,14 +44,14 @@ of a single-instrument laboratory.
 ## Facility-wide safety
 
 - [Emergency Quick Reference](emergency-quick-reference.md)
+- [Detailed Emergency Procedures](emergency-procedures.md)
 - [Lab Access and Safety Training](lab-access-training.md)
 - [General Safety](general-safety.md)
 - [Lab Layout and Access](lab-layout.md)
 - [Attire and Personal Protective Equipment](ppe.md)
 
-Additional facility-wide pages covering laser safety, chemical handling,
-detailed emergency procedures, and reference information will be migrated in a
-follow-up change.
+Additional facility-wide pages covering laser safety, chemical handling, and
+reference information will be migrated in follow-up changes.
 
 ## Instrument-specific safety
 
