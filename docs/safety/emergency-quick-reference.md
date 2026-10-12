@@ -16,6 +16,9 @@ safety_level: safety-critical
     In any emergency, protect people first. Stop work, move away from the hazard
     if it is safe to do so, alert nearby occupants, and call for help.
 
+For step-by-step response instructions, see
+[Detailed Emergency Procedures](emergency-procedures.md).
+
 ## Incident Notification Flowchart
 
 [![Homewood Lab Incident Notification Chart showing response paths for emergencies and non-emergencies](../assets/safety/images/homewood-lab-incident-notification-chart.png)](../assets/safety/documents/homewood-lab-incident-notification-chart.pdf)
@@ -28,7 +31,7 @@ Notification Chart, version 1.0, December 17, 2024.*
 | Life safety emergency, fire, serious injury, threat | Evacuate or move to safety, then call immediately. | **JHU Security emergency: 410-516-7777.** From a campus phone, call **6-7777** or **911**. |
 | Medical incident requiring more than first aid | Call Security and stay with the person if safe. | Security: **410-516-7777**. Notify Matt Shaeffer or Joseph Nkansah-Mahaney after urgent response is underway. |
 | Minor injury | Provide first aid if trained; seek evaluation as appropriate. | During business hours, contact the appropriate health service. Outside business hours, call Security. |
-| Fire or fire alarm | Evacuate. Do not attempt to fight the fire unless you are specifically trained and authorized. | Pull the nearest alarm if needed, evacuate to the rally point, and call Security. |
+| Fire or fire alarm | Evacuate. Do not attempt to fight the fire unless you are specifically trained and authorized. | Pull the alarm next to the north exit door if needed, evacuate to the grass lawn in front of the Stieff Building across the parking lot, and call Security. |
 | Chemical or hazardous material spill | Notify lab engineers. Do not clean unless trained and the spill is small and low hazard. | Matt Shaeffer or Joseph Nkansah-Mahaney. If unavailable or unsafe, call Security. |
 | Facilities emergency: leak, gas line problem, unsafe building condition | Notify lab engineers. If unavailable and there is a safety issue, call Security. | Lab engineers first; Security for emergencies; Facilities issue line: **410-516-8063** or Transwestern: **443-997-0680**. |
 
