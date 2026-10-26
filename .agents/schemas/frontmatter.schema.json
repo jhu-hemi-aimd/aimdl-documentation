@@ -59,6 +59,18 @@
       ],
       "description": "Classification of the page's procedural and safety risk."
     },
+    "reviewers": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "description": "Optional additional reviewers, including lab safety reviewers."
+    },
+    "hide": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["navigation", "toc"] },
+      "uniqueItems": true,
+      "description": "Optional Material for MkDocs page navigation visibility settings."
+    },
     "tags": {
       "type": "array",
       "items": {

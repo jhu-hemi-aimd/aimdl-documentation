@@ -49,8 +49,10 @@ of a single-instrument laboratory.
 - [General Safety](general-safety.md)
 - [Lab Layout and Access](lab-layout.md)
 - [Attire and Personal Protective Equipment](ppe.md)
+- [Chemical Handling and Waste](chemical-safety.md)
+- [Safety Data Sheet Index](sds.md)
 
-Additional facility-wide pages covering laser safety, chemical handling, and
+Additional facility-wide pages covering laser safety and
 reference information will be migrated in follow-up changes.
 
 ## Instrument-specific safety

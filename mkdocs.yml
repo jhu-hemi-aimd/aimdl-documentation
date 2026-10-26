@@ -94,6 +94,8 @@ nav:
       - General Safety: safety/general-safety.md
       - Lab Layout and Access: safety/lab-layout.md
       - Attire and PPE: safety/ppe.md
+      - Chemical Handling and Waste: safety/chemical-safety.md
+      - Safety Data Sheets: safety/sds.md
   - Instruments:
       - Overview: instruments/index.md
       - MAXIMA:
