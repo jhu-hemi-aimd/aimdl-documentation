@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "instructions": [
+    [
+      "coord",
+      {
+        "photo_only": true
+      }
+    ]
+  ]
+}

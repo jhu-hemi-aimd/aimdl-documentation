@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "instructions": [
+    [
+      "coord",
+      {}
+    ],
+    [
+      "maxima",
+      {
+        "sample": {
+          "points": {
+            "frame": "sample",
+            "units": "mm",
+            "values": [
+              [
+                5,
+                5
+              ]
+            ]
+          }
+        },
+        "collection_settings": {
+          "adaptive_ct": false,
+          "calibrate": false,
+          "collection_mode": "XRDXRF",
+          "count_time": 10,
+          "detector_distance": 0
+        },
+        "xray_settings": {
+          "beam_x": 80,
+          "beam_y": 120,
+          "current": 4.375,
+          "voltage": 160
+        }
+      }
+    ]
+  ]
+}
